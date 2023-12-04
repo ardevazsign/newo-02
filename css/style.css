@@ -201,14 +201,11 @@ header{
     top: 70%;
     left: -5%;
 }
-
-
 .blur-strawberry{
     position: absolute;
     top: -20%;
     left: 94%;
 }
-
 .hero-strawberry{
     display: flex;
     flex-direction: column;
@@ -284,7 +281,6 @@ header{
 .fruit-orga{
     width: 110px;
 }
-
 /* --------- End of Hero ------------ */
 /* ---- How To Do Section ------------- */
 .how-to-order{
