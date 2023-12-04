@@ -117,8 +117,8 @@ header{
     top: -4%;
     left: 35%;
 }
-.big-image {
-    background: url("images/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background 1.jpg");
+.big-image-1 {
+    /* background: url("images/") */
     border-radius: 500px;
     width: 485px;
     height: 735px;
