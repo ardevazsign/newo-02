@@ -31,7 +31,7 @@ body{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
-/* ---------------------------header----------------------------------- */
+/*------------------header------------------------------- */
 header{
     background-color: var(--fill-Pure);
 }
@@ -282,7 +282,7 @@ header{
     width: 110px;
 }
 /* --------- End of Hero ------------ */
-/* ---- How To Do Section ------------- */
+/* ---- How it works Section ------------- */
 .how-to-order{
     display: flex;
     flex-direction: column;
@@ -321,9 +321,6 @@ header{
     justify-content: center;
     gap: 24px;
 }
-.to-order li {
-    list-style: none;
-}
 .first-step,
 .second-step,
 .third-step{
@@ -335,6 +332,9 @@ header{
     border-radius: 20px;
     padding: 39.5px 20px;
     margin-top: 44px;
+}
+.to-order li {
+    list-style: none;
 }
 .step-how{
     color: var(--fill-black);
@@ -367,7 +367,6 @@ header{
     background-color: var(--fill-fresh);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: var(--fill-Pure);
-    font-family: DM Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -380,10 +379,8 @@ header{
 .third-step .step{
     background-color: var(--fill-yellow);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80px;
     width: 136px;
     color: var(--fill-Pure);
-    font-family: DM Sans;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -399,10 +396,10 @@ header{
     justify-content: center;
 }
 .gif-image{
+    background: var(--gif-imageurl);
     margin-bottom: 200px;
     margin-top: 80px;
     border-radius: 20px;
-    background: var(--gif-imageurl);
     border-radius: 20px;
     width: 900px;
     height: 520px;
@@ -648,6 +645,8 @@ color: var(--fill-Pure);
 /* .order-organic:hover, */
 .arrow-icon:hover,
 .arrow-div:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: var(--fill-Pure);
     color: var(--fill-fresh);
     fill: var(--fill-fresh);
@@ -697,10 +696,20 @@ color: var(--fill-Pure);
     padding-bottom: 20px;  
     position: relative;
 }
+.fruit:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .fruit h2{
     color: var(--fill-Pure);
     padding-bottom: 0;
     margin-bottom: 0;
+    font-family: DM Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.96px;
 }
 .fruit img{
     margin:0 35px;
