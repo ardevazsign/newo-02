@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="container">
     
 <!-- Header -->
 <header>
@@ -25,7 +26,7 @@
        </nav>
        <div class="fresh-logo">
         <svg class="logo" width="16" height="16">
-            <use href="./images/icons.svg#icon-logo"><span class="logo-text">fresh harvest box</span></use>
+            <use href="./images/icons.svg#icon-logo"></use><span class="logo-text">fresh harvest box</span>
         </svg>
         </div>
         <button class="btn-basket">
@@ -33,6 +34,16 @@
             <use href="./images/icons.svg#icon-cart"></use>
         </svg>
         </button>
+<!-- mobile menu bar -->
+
+         <button class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#menu-left"></use>
+            </svg> 
+         </button>
+<!--   end here      -->
+
+
         </div>
 </header>
 
@@ -44,8 +55,9 @@
     <div class="hero-container">
         <div class="hero-main-background">
             <div class="big-image-holder">
-                <div class="big-image"></div>
+                <div class="big-image">
                  <img class="big-image-1" src="images/young-energetic-red-haired-woman-white-t-shirt-holding-tasty-oranges-pink-background 1.jpg" alt="">
+                </div>
             </div>
         
         <div class="hero-title">
@@ -221,13 +233,106 @@
         </li>
     </ul>
 </div>
+<!-- modal -->
 <div class="order-main">
 <div class="order-organic">
-    <button class="arrow-div">
+    <button type="button" id="open-modal" class="arrow-div" data-modal-open>
     <svg class="arrow-icon" width="14" height="14">
         <use href="./images/icons.svg#arrow"><span class="order-mint">Order</span></use>
     </svg>
     </button>
+    <!-- back drop div -->
+    <div id="modal" class="backdrop is-hidden" data-modal>
+    <!-- modal div -->
+    <div class="modal">
+    <div class="btn-modal-holder">
+    <button type="button" id="close-modal" class="btn-modal" data-modal-close>
+        <svg width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
+        </svg>
+    </button>
+    </div>
+    <!-- form -->
+    <form action="#" method="post" class="modal-order">
+    <h3 class="modal-title">Your order</h3>
+    <div>
+    <ul class="check-box">
+        <li class="box one">
+            <label class="box-label" for="checkbox">
+            <input type="checkbox1" value="">
+            <!-- <svg class="box-icon1" width="20" height="20">
+                <use href="./images/icons.svg#checkboxsvg"></use>
+            </svg> -->
+            <h3 class="box-h3">strawberry basket</h3>
+            <h5 class="box-h5">Plant</h5>
+            <img src="images/modal image 1.png" alt="">
+            </label>
+        </li>
+        <li class="box two">
+            <label for="checkbox"></label>
+            <input type="checkbox2">
+            <!-- <svg class="box-icon2" width="20" height="20">
+                <use href="./images/icons.svg#checkboxsvg"></use>
+            </svg> -->
+            <h3 class="box-h3">apple basket</h3>
+            <h5 class="box-h5">Plant</h5>
+            <img src="images/modal image 2.png" alt="">
+           
+        </li>
+        <li class="box three">
+            <label for="checkbox">
+            <input type="checkbox3">
+            <!-- <svg class="box-icon3" width="20" height="20">
+                <use href="./images/icons.svg#checkboxsvg"></use>
+            </svg> -->
+            <h3 class="box-h3">Fruits basket</h3>
+            <h5 class="box-h5">Plant</h5>
+            <img src="images/modal image 3.png" alt="">
+           </label>
+        </li>
+    </ul>
+    </div>
+    <div class="customer-info">
+    <div class="personal-info">
+        <label for=""></label>
+        <input type="text" placeholder="Enter full name...">
+    
+        <label for="email"></label>
+        <input class="customer-input" type="text" name="email" placeholder="Enter email...">
+   
+        <label for=""></label>
+        <input type="text" placeholder="Enter card...">
+
+        <label for="comment"></label>
+        <textarea class="for-comment" name="comment" id="" cols="20" rows="6" placeholder="Enter comments..."></textarea>
+       <button type="submit" class="submit-button">submit</button>
+    </div>
+    <div class="lady-with-banana">
+        <img class="lady" src="images/lady with banana -modal.png" alt="" >
+    </div>
+    </div>
+    </form>
+    <!-- end tag of modal div -->
+    </div>
+    </div>
+    <!-- back drop div end tag -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>
 </section>
@@ -239,6 +344,7 @@
         <h1 class="fresh-title">Fresh harvest box has <br>
             got you covered</h1>
         <div class="fresh-harvest">
+            <img class="image-mobile" src="images/fresh box for mobile.png" width="335" height="476" alt="fruits">
             <img class="fresh-img" src="images/Rectangle 42472.jpg" width="792" height="502" alt="fruits">
             <img class="fresh-img" src="images/Rectangle 42473.jpg" width="400" height="502" alt="fruits">
         </div>
@@ -298,9 +404,65 @@
         </div>
         </div>
      </div>
-</footer> 
+</footer>
+</div>
+
+<!-- menu bar content -->
+    <div class="mobile-menu-content js-menu-container" id="mobile-menu">
+        <div class="menu-logo-close">
+        <div class="fresh-logo">
+           <svg class="logo" width="16" height="16">
+                <use href="./images/icons.svg#icon-logo"><span class="logo-text">fresh harvest box</span></use>
+           </svg>
+        </div>
+        <button class="mobile-menu-close js-close-menu">
+            <svg class="icon-close" width="24" height="24">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+        </div>
+       <div class="mobile-menu-center">
+       <nav class="nav-menu-mobile">
+            <ul class="fresh-select-mobile">
+                <li class="selection-mobile"><a href="">how it works</a></li>
+                <li class="selection-mobile"><a href="">fruits</a></li>
+                <li class="selection-mobile"><a href="">contacts</a></li>
+            </ul>
+        </nav>
+        <button class="btn-basket-mobile">
+            <svg class="basket-icon-mobile" width="28" height="28">
+                <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+        </button>
+        <div class="logo-holder-xs">
+            <div class="text-holder-xs">
+                <div class="text-logo-xs">Ardevaz<span class="sign-xs">Sign</span></div>
+                <svg class="icon-logo-xs" width="25" height="35">
+                    <use href="./image/icons.svg#keyboard"></use>
+                </svg>
+            </div>
+        </div>
+        </div>
+    </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/fresh-modal.js"></script>
 </body>
 </html>
 <!-- ArdevazSign 11-29-2023 to  -->
+
+
